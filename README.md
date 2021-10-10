@@ -36,24 +36,26 @@ const { itemsDraft, patches, inversePatches, confirm } = userStore.add(newUser);
 Gets an item by id
 
 ### .add(id: string, item: ItemType)
-Creates a draft of adding a new item to the store. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store/blob/main/README.MD#returned-value-of-add).
+Creates a draft of adding a new item to the store. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store#returned-value).
 
 ### .update(id: string, itemProps: Partial<ItemType>)
-Creates a draft of updating an item with new values. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store/blob/main/README.MD#returned-value-of-add).
+Creates a draft of updating an item with new values. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store#returned-value).
 
 ### .remove(id: string)
-Creates a draft of removing an item from the store. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store/blob/main/README.MD#returned-value-of-add).
+Creates a draft of removing an item from the store. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store#returned-value).
 
 ### .batchUpdate(updates: [BatchUpdate](https://github.com/MiroslavGannoha/immutable-item-store/blob/main/src/index.ts#L22)<ItemType>[])
-Creates a draft of batch updating items with new values. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store/blob/main/README.MD#returned-value-of-add).
+Creates a draft of batch updating items with new values. [Returned value](https://github.com/MiroslavGannoha/immutable-item-store#returned-value).
 
-### .applyPatches(patches: [Patch](https://github.com/MiroslavGannoha/immutable-item-store/blob/main/README.MD#patch))
-Applies patches to the store items. [More on patches](https://immerjs.github.io/immer/patches/)
+### .applyPatches(patches: [Patch](https://github.com/MiroslavGannoha/immutable-item-store#patch))
+Applies patches to the store items. [More on patches.](https://immerjs.github.io/immer/patches/)
 
 ### .itemsArray()
 Transforms map of items to an array when required
 
-## Returned value (add, update, remove, batchUpdate methods)
+## Returned value
+of add, update, remove, batchUpdate methods
+
 ```ts
 type OpReturnType<T> = {
     itemsDraft: Items<Immutable<ItemType>>;
@@ -75,6 +77,7 @@ Describes inverse changes
 Saves the draft by appling patches
 
 ## Type tips
+
 ### Patch
 ```ts
 interface Patch {
