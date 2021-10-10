@@ -11,14 +11,16 @@ import {
   
   enablePatches();
   enableMapSet();
-  
+
   export type Items<T> = ReadonlyMap<string, Immutable<T>>;
+
   type OpReturnType<T> = {
     itemsDraft: Items<Immutable<T>>;
     patches: Patch[];
     inversePatches: Patch[];
     confirm: () => Items<T>;
   };
+
   export interface BatchUpdate<T> {
     id: string;
     itemProps: Partial<T>;
@@ -142,7 +144,7 @@ import {
     }
   
     /**
-     * Transforms map of items when different data type is required
+     * Transforms map of items to an array when required
      * @returns array of items
      */
     public get itemsArray(): Immutable<T>[] {
