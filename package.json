@@ -21,6 +21,7 @@
     "store",
     "immutability",
     "immer",
+    "immerjs",
     "items",
     "collection",
     "patch",
