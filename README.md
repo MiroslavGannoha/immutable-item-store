@@ -1,5 +1,5 @@
 # 🗃️ Immutable Item Store
-[![NPM version](https://badge.fury.io/js/immutable-item-store.svg)](http://badge.fury.io/js/immutable-item-store)
+[![npm version](https://badge.fury.io/js/immutable-item-store.svg)](https://badge.fury.io/js/immutable-item-store)
 [![npm](https://img.shields.io/npm/dm/immutable-item-store.svg?maxAge=2592000)]()
 
 > Store your items of data in a store powered by immutability
