@@ -30,13 +30,15 @@ const newUser = new User();
 const { itemsDraft, patches, inversePatches, confirm } = userStore.add(newUser);
 console.log('items size:', userStore.items.size); // items size: 0
 console.log('items draft size:', itemsDraft.size); // items draft size: 1
+
 confirm(); // or userStore.applyPatches(patches)
 console.log('items size:', userStore.items.size); // items size: 1
+
 userStore.applyPatches(inversePatches);
 console.log('items size:', userStore.items.size); // items size: 0
 
 // Update item
-userStore.update('some-id', { isAdmin: false }).confirm();
+userStore.update('some-id', { isAdmin: true }).confirm();
 
 // Batch update items
 const updates: BatchUpdate<User>[] = [
