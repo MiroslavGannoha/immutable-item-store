@@ -28,7 +28,7 @@
     "data",
     "storage"
   ],
-  "author": "Miroslav Gannoha",
+  "author": "miroslav-gannoha",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/MiroslavGannoha/immutable-item-store/issues"
